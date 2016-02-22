@@ -43,7 +43,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- Plug-in activities -->
+        <activity
+            android:name="no.nordicsemi.android.BLE.dfu.DfuActivity"
+            android:icon="@drawable/ic_dfu_feature"
+            android:label="@string/dfu_feature_title" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="no.nordicsemi.android.nrftoolbox.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="no.nordicsemi.android.BLE.hrs.HRSActivity"
             android:icon="@drawable/ic_hrs_feature"
@@ -54,7 +64,36 @@
                 <category android:name="no.nordicsemi.android.nrftoolbox.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="no.nordicsemi.android.BLE.hts.HTSActivity"
+            android:icon="@drawable/ic_hts_feature"
+            android:label="@string/hts_feature_title" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="no.nordicsemi.android.nrftoolbox.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="no.nordicsemi.android.BLE.bpm.BPMActivity"
+            android:icon="@drawable/ic_bpm_feature"
+            android:label="@string/bpm_feature_title" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="no.nordicsemi.android.nrftoolbox.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="no.nordicsemi.android.BLE.gls.GlucoseActivity"
+            android:icon="@drawable/ic_glucose_feature"
+            android:label="@string/gls_feature_title" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="no.nordicsemi.android.nrftoolbox.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="no.nordicsemi.android.BLE.proximity.ProximityActivity"
             android:icon="@drawable/ic_proximity_feature"
